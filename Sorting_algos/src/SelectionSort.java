@@ -22,8 +22,8 @@ public class SelectionSort {
             }
         }
         //printing unsorted array
-        for (int i=0;i<n;i++){
-            System.out.print(arr[i]+",");
+        for (int j : arr) {
+            System.out.print(j + ",");
         }
     }
 }

@@ -1,6 +1,7 @@
 public class Prog1 {
     public static void main(String[] args) {
-        printNum(10);
+      //  printNum(10);
+        print(10);
     }
     static void printNum(int n){
         System.out.println(n);
@@ -9,6 +10,13 @@ public class Prog1 {
         }
             else{
             printNum(n-1);
+        }
+
+    }
+    static void print(int n){
+        System.out.println("hello world");
+        if (n>=0){
+            print(n-1);
         }
 
     }

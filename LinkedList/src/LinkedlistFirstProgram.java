@@ -1,19 +1,36 @@
-public class LinkedlistFirstProgram {
-    public static class Node{
+public class LinkedlistFirstProgram{
+    public static class Node {
         int data;
         Node next;
     }
 
-    public static void main(String[] args) {
-        Node one =new Node();
-        one.data=1;
-        one.next=null;
-        Node two=new Node();
-        two.data=2;
-        one.next=two;
-        two.next=null;
+   public static class ll{
+        Node head;
+        Node tail;
+        int size;
+    }
 
-        System.out.println(one.next.next);
+
+        public static void main(String[] args) {
+            ll list=new ll();
+            Node temp=new Node();
+            temp.data=1;
+            temp.next=null;
+            temp.next=list.head;
+            temp.next=list.tail;
+
+            while(temp!=null){
+                System.out.println(temp.data);
+                temp=temp.next;
+
+            }
+
+
         }
+      public  static void insertAtFirst(int val){
+
+
+        }
+
 
 }

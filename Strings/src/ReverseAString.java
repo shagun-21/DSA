@@ -1,10 +1,10 @@
 public class ReverseAString {
     public static void main(String[] args) {
         String str="shagun";
-        String str1="";
+        String s="";
         for (int i=str.length()-1;i>=0;i--){
-            str1=str1+str.charAt(i);
+            s=s+str.charAt(i);
         }
-        System.out.println(str1);
+        System.out.println(s);
     }
 }

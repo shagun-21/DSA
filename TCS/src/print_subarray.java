@@ -4,7 +4,6 @@ public class print_subarray {
         // printAllSubArray(arr);
         System.out.println(subArraySum(arr));
         
-
         
     }
     static void printAllSubArray(int[] arr){
@@ -18,22 +17,22 @@ public class print_subarray {
             }
         }
     } 
-    static void subArraySum(int[] arr){
+    static int subArraySum(int[] arr){
 
         //brute force approach
-        // int maxSum=0;
-        // int n=arr.length;
-        // for(int i=0;i<n;i++){
-        //     for(int j=i;j<n;j++){
-        //         int sum=0;
-        //         for(int k=i;k<=j;k++){ 
-        //             sum+=arr[k];
-        //         }
-        //         maxSum=Math.max(maxSum, sum);
+        int maxSum=0;
+        int n=arr.length;
+        for(int i=0;i<n;i++){
+            for(int j=i;j<n;j++){
+                int sum=0;
+                for(int k=i;k<=j;k++){ 
+                    sum+=arr[k];
+                }
+                maxSum=Math.max(maxSum, sum);
                 
-        //     }
-        // }
-        // return maxSum;
+            }
+        }
+        return maxSum;
 
         //cumulative sum approach 
         
